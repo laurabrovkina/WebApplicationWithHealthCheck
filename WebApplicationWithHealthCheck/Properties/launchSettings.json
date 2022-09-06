@@ -1,0 +1,45 @@
+﻿{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:58702",
+      "sslPort": 44388
+    }
+  },
+  "profiles": {
+    "WebApplicationWithHealthCheck": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7268;http://localhost:5268",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "HealthChecksUI": {
+        "commandName": "Service 1",
+        "dotnetRunMessages": true,
+        "launchBrowser": true,
+        "applicationUrl": "https://localhost:5011/health",
+        "environmentVariables": {
+          "ASPNETCORE_ENVIRONMENT": "Development"
+        },
+        "HealthChecksUI": {
+          "commandName": "Service 2",
+          "dotnetRunMessages": true,
+          "launchBrowser": true,
+          "applicationUrl": "https://localhost:5021/health",
+          "environmentVariables": {
+            "ASPNETCORE_ENVIRONMENT": "Development"
+          }
+        }
+      },
+      "IIS Express": {
+        "commandName": "IISExpress",
+        "launchBrowser": true,
+        "environmentVariables": {
+          "ASPNETCORE_ENVIRONMENT": "Development"
+        }
+      }
+    }
+}
